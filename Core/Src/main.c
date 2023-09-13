@@ -106,9 +106,24 @@ int main(void)
   while (1)
   {
 
-	  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-  //  HAL_GPIO_TogglePin(LD2_GPIO_PORT, LD2_Pin);
-	  HAL_Delay(500);
+	  // Włączamy diodę na 200ms
+	  HAL_GPIO_WritePin(LD_ZEW_GPIO_Port, LD_ZEW_Pin, GPIO_PIN_SET);
+	  HAL_Delay(200);
+	  // Wyłączamy diodę na 800ms
+	  HAL_GPIO_WritePin(LD_ZEW_GPIO_Port, LD_ZEW_Pin, GPIO_PIN_RESET);
+	  HAL_Delay(800);
+
+
+
+	   // Sprawdzamy, czy przycisk został naciśnięty
+	    if (HAL_GPIO_ReadPin(USER_BUTTON_GPIO_Port, USER_BUTTON_Pin) == GPIO_PIN_RESET) {
+	        // Jeśli tak to włączamy diodę
+	        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+	    } else {
+	        // A jeśli nie to wyłączamy ją
+	        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+	    }
+
 
 
     /* USER CODE END WHILE */
