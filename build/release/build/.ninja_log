@@ -40,3 +40,5 @@
 301	863	7163314162345404	CMakeFiles/Projekt_Wakacje.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj	c8178587673521b9
 375	1047	7163314164184624	CMakeFiles/Projekt_Wakacje.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj	d93ac0b4c6f6d38f
 1047	1235	7163314165336531	Projekt_Wakacje.elf	7b9d8916604437e4
+2	130	7163315906086669	CMakeFiles/Projekt_Wakacje.dir/Core/Src/main.c.obj	2c461687d0a229aa
+131	305	7163315907190183	Projekt_Wakacje.elf	7b9d8916604437e4
