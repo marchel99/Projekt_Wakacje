@@ -106,6 +106,8 @@ int main(void)
   while (1)
   {
 
+/* 
+
 	  // Włączamy diodę na 200ms
 	  HAL_GPIO_WritePin(LD_ZEW_GPIO_Port, LD_ZEW_Pin, GPIO_PIN_SET);
 	  HAL_Delay(200);
@@ -124,7 +126,7 @@ int main(void)
 	        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 	    }
 
-
+ */
 
     /* USER CODE END WHILE */
 
