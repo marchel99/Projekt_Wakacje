@@ -64,6 +64,7 @@ void _exit (int status)
   while (1) {}    /* Make sure we hang here */
 }
 
+
 __attribute__((weak)) int _read(int file, char *ptr, int len)
 {
   (void)file;
