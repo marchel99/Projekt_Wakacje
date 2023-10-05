@@ -92,6 +92,10 @@ int main(void)
 
 
 
+
+
+
+
   /* USER CODE BEGIN 2 */
   const char message[] = "Hello world!\r\n";
   HAL_UART_Transmit(&huart2, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
